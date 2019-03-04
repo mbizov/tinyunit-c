@@ -33,6 +33,6 @@ int main() {
   printf("test_func2: %s\n", result);
   
   if (tu_tests_run == tu_tests_passed) printf("ALL TESTS PASSED\n");
-  else printf("%d TESTS FAILED OUT OF %d IN TOTAL\n", tu_tests_run - tests_passed, tu_tests_run);
+  else printf("%d TESTS FAILED OUT OF %d IN TOTAL\n", tu_tests_run - tu_tests_passed, tu_tests_run);
   return 0;
 }
