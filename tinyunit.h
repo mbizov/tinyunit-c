@@ -6,7 +6,9 @@
 #define tu_run_test(test) do {
                             char *msg = test(); \
                             tu_tests_run++; \
-                            if (msg) return msg;
+                            if (msg) return msg; \
+                            tu_tests_passed++;
                           } while (0)
 
 extern int tu_tests_run;
+extern int tu_tests_passed;
